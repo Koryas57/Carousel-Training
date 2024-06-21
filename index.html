@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test caroussel</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="../index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://www.logogenie.fr/images/articles/logo-design-with-shapes4.jpg"
+          alt="Logo"
+        />
+      </div>
+      <h1>Le Caroussel</h1>
+      <ul>
+        <li>RECHERCHER</li>
+        <li>CONTACT</li>
+      </ul>
+    </header>
+
+    <!-- ***** CARROUSSEL ***** -->
+
+    <section class="container">
+      <div class="banner">
+        <img
+          src="https://www.shutterstock.com/image-photo/skeptic-surprised-cat-thinking-dont-600nw-1905929728.jpg"
+          alt="Image 1"
+        />
+      </div>
+      <div class="left_arrow">
+        <img
+          src="https://toppng.com/uploads/preview/fun-arrow-11549436187eq6o1i8aua.png"
+          alt="Précédent"
+        />
+      </div>
+      <div class="right_arrow">
+        <img
+          src="https://toppng.com/uploads/preview/fun-arrow-11549436187eq6o1i8aua.png"
+          alt="Suivant"
+        />
+      </div>
+    </section>
+    <div class="squares_container"></div>
+  </body>
+
+  <!-- ****** FORMULAIRE ****** -->
+
+  <section class="formu">
+    <h2>Inscrire votre chat</h2>
+    <p>Uploadez une photo de votre chat en remplissant le formulaire</p>
+    <br />
+    <hr />
+    <form action="">
+      <label for="Prénom">Le prénom de votre chat</label>
+      <input
+        type="text"
+        name="Prénom"
+        id="Prénom"
+        placeholder="Votre nom"
+        required
+      />
+      <span id="messageErreur"></span>
+      <br />
+      <label for="Password">Entrez votre Mot de Passe</label>
+      <input
+        type="password"
+        name="Mot de Passe"
+        id="Password"
+        placeholder="Votre mot de passe"
+        required
+      />
+      <label for="chats"> Quel est votre chat favori ?</label>
+      <select id="chats" name="chats">
+        <option value="kiki">Kiki</option>
+        <option value="le-chat-du-seigneur-des-anneaux">
+          Le chat du seigneur des anneaux
+        </option>
+        <option value="le-chat-dans-titanic">Le chat dans Titanic</option>
+      </select>
+      <input type="checkbox" id="accepter" name="accepter" checked />
+      <input type="submit" value="Envoyer" />
+    </form>
+  </section>
+</html>

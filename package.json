@@ -1,0 +1,16 @@
+{
+  "name": "test-caroussel",
+  "version": "1.0.0",
+  "description": "Test du caroussel",
+  "main": "index.js",
+  "git":"",
+  "scripts": {
+    "sass": "npx sass --watch style.scss:style.css"
+  },
+  "author": "Yass",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.77.4"
+  }
+
+}
